@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><button onclick="right()"><img src="arrow.png" width="50" height="50" /></button></center>
+<center><button onclick="left()"><img src="arrow left.png" width="50" height="50" /></button></center>
+<center><div id='number'style="font-size:100px;font-weight: bold;background:black;color:lime">0</div></center>
+</body>
+<script>
+    i=0
+    function left() {
+        i--
+        if (i<0) {
+            i=0
+        }
+        document.getElementById('number').innerHTML=i
+    }
+    function right () {
+       i++
+        document.getElementById('number').innerHTML=i
+    }
+</script>
+</html>
